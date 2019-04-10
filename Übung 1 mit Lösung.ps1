@@ -52,7 +52,7 @@ Get-Process -Name *host*
 # alle Festplatten mit der Nummer 0
 Get-Disk -Number 0
 
-# alle Volumes mit dem Buchstaben C
+# alle Volumes mit dem Laufwerks-Buchstaben C
 Get-Volume -DriveLetter C
 
 # die neuesten 10 Ereignisse aus dem Security Ereignisprotokoll
