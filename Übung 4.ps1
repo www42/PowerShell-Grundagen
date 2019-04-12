@@ -8,7 +8,7 @@
 
 # Tabelle aller Prozesse mit folgenden Spalten
 #
-# Id, Name, Physical Memory in MB, Virtual Memory in MB (2 Stellen nach dem Komma)
+# Id, Name, Paged Memory in MB, Virtual Memory in MB (2 Stellen nach dem Komma)
 
 
 # Dieselbe Tabelle abgespeichert in Procs.txt
