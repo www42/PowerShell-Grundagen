@@ -1,13 +1,13 @@
-﻿# WMI Datenbank abfragen
-#-----------------------
-
-# Die Serien-Nummer vom BIOS ermitteln.
-
-
-# Alle Dienste ermitteln, die nicht laufen, die aber den Starttype  Automatisch haben. 
+﻿# Welche Version des .Net Frameworks ist installiert?
+#
+# Tip: HKLM:\SOFTWARE\Microsoft\NET Framework Setup\NDP\v4\Full
 
 
 
-# Zu jedem Dienst die zugehörigen Prozesse ermitteln.
+
+# Bei dem Benutzer den Registry Key\Software\Scripts anlegen 
+# Dort den Eintrag "PSDriveName" (String) anlegen mit dem Wert "ScriptShare"
 
 
+
+# Welche Root-Zertifikate (Benutzer) sind abgelaufen?

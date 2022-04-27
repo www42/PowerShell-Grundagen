@@ -1,6 +1,13 @@
-﻿# Welche Version des .Net Frameworks ist installiert?
-#
-# Tip: HKLM:\SOFTWARE\Microsoft\NET Framework Setup\NDP\v4\Full
-#      Property 'Release'
-#
-#      Tabelle https://msdn.microsoft.com/en-us/library/hh925568(v=vs.110)
+﻿# WMI Datenbank abfragen
+#-----------------------
+
+# Die Serien-Nummer vom BIOS ermitteln.
+
+
+# Alle Dienste ermitteln, die nicht laufen, die aber den Starttype  Automatisch haben. 
+
+
+
+# Zu jedem Dienst die zugehörigen Prozesse ermitteln.
+
+
