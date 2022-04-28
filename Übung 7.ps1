@@ -1,5 +1,5 @@
 # Finde alle AD Benutzer der Marketing Abteilung. Nutze dabei den Befehl
-
+# Get-ADUser -Filter {Department -eq "Marketing"} -Properties Department
 
 # Speichere alle Benutzer der Marketing Abteilung in eine Variable. Nutze die Variable $MarketingUsers
 
