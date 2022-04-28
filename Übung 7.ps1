@@ -1,57 +1,38 @@
-﻿
-#region Step 1 Oneliner
+# Finde alle AD Benutzer der Marketing Abteilung. Nutze dabei den Befehl
 
-get-service -Name bits -ComputerName lon-dc1
 
-#endregion
+# Speichere alle Benutzer der Marketing Abteilung in eine Variable. Nutze die Variable $MarketingUsers
 
-#region Step 2 Variables
 
-$Service = "bits"
-$ComputerName = "LON-DC1"
-Get-Service -Name $Service -ComputerName $ComputerName
+# Welchen Typ hat $MarketingUsers?
 
-#endregion
 
-#region Step 3 Parameters
+# Wieviele Benutzer der Marketing Abteilung gibt es?
 
-param ($Service,$ComputerName) 
-Get-Service $Service -ComputerName $ComputerName
 
-#endregion
 
-#region Step 4 Parameters fancy
+# Wie heißt der erste Benutzer der Marketing Abteilung?
 
-param ( 
-[Parameter(Mandatory=$true)][string]$Service,
-[Parameter(Mandatory=$false)][string]$ComputerName = "LON-CL1"
-)
 
-Get-Service $Service -ComputerName $ComputerName
 
-#endregion
+# Die Firma strukturiert sich neu! Die Marketing Abteilung gehört jetzt zum Business Development.
+# Ändere bei Benutzern die Abteilung von "Marketing" in "Business Development"!
 
-#region Step 5 Function
 
-function Get-MyService {
-    param ( 
-    [Parameter(Mandatory=$true)][string]$Service,
-    [Parameter(Mandatory=$false)][string]$ComputerName = "LON-CL1"
-    )
-    Get-Service $Service -ComputerName $ComputerName
-}
+# Hat's geklappt?
 
-#endregion
 
-#region Step 6 Stufe Modul
 
-$env:PSModulePath
-$ModuleRoot = $env:PSModulePath.Split(";")[0]
-$ModuleName = "foo"
-$ModulePath = Join-Path $ModuleRoot $ModuleName
-New-Item -ItemType Directory -Path $ModulePath
 
-Copy-Item -Path foo.ps1 -Destination $ModulePath\foo.psm1
+# Erzeuge ein Array $Computers und schreibe die Namen "LON-DC1" und "LON-DC2" hinein!
 
-#endregion
+
+# Füge den Name "LON-SVR1" zum Array hinzu!
+
+
+# Entferne "LON-DC2" vom Array!
+
+
+# Teste die Netzwerkverbindung zu den Computern im Array!
+
 
