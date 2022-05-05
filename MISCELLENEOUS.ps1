@@ -15,6 +15,12 @@ $bar = New-Object -TypeName psobject -Property $foo
 $bar.GetType()
 $bar | Test-NetConnection # ByPropertyName
 
+# alternativ
+$bar = [PSCustomObject]@{
+    ComputerName = "LON-DC1"
+    Port = 5985
+}
+
 # --------------------------------------------------
 # Format operator
 $pi # 3,14159265358979
